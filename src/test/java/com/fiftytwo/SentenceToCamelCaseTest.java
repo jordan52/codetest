@@ -30,10 +30,10 @@ public class SentenceToCamelCaseTest
 
     public void testSimple()
     {
-        String input = "This is a sentence";
+        String input = "this is a sentence";
         String output = "thisIsASentence";
         String result = SentenceToCamelCase.go(input);
-        assertEquals(result, output);
+        assertEquals(output, result);
     }
 
     public void testStripPunctuation()
@@ -41,15 +41,15 @@ public class SentenceToCamelCaseTest
         String input = "This is a sentence.";
         String output = "thisIsASentence";
         String result = SentenceToCamelCase.go(input);
-        assertEquals(result, output);
+        assertEquals(output, result);
     }
 
     public void testFirstCap()
     {
-        String input = "this is a sentence.";
+        String input = "This is a sentence";
         String output = "thisIsASentence";
         String result = SentenceToCamelCase.go(input);
-        assertEquals(result, output);
+        assertEquals(output, result);
     }
 
     public void testWackyCase()
@@ -57,7 +57,7 @@ public class SentenceToCamelCaseTest
         String input = "This is A sEnTeNce";
         String output = "thisIsASentence";
         String result = SentenceToCamelCase.go(input);
-        assertEquals(result, output);
+        assertEquals(output, result);
     }
 
 }
