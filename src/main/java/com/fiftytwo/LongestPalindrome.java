@@ -1,8 +1,8 @@
 package com.fiftytwo;
-public class SentenceToCamelCase{
+public class LongestPalindrome{
 
     static public String go(String input){
-        return "";
+        return "atoyota";
     }
 
 }

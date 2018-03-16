@@ -1,5 +1,8 @@
+answers.txt
 .project
 .vscode
+.classpath
+.settings
 /target
 # Compiled class file
 *.class
