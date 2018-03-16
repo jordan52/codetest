@@ -1,0 +1,44 @@
+
+    static public String go(String input){
+        StringBuffer sb = new StringBuffer();
+        int wordCount = 0;
+        for(String word:input.split(" ")){
+            String lowercase = word.toLowerCase();
+            
+            lowercase = lowercase.replace(".", "");
+            if(wordCount == 0){
+                sb.append(lowercase);
+            } else {
+               sb.append(lowercase.substring(0,1).toUpperCase()).append(lowercase.substring(1));
+            }
+            wordCount++;
+        }
+        return sb.toString();
+    }
+
+
+
+    static public String go(String input){
+        int rightIndex = 0, leftIndex = 0;
+        String currentPalindrome = "", longestPalindrome = "";
+        for (int centerIndex = 1; centerIndex < input.length() - 1; centerIndex++) {
+            leftIndex = centerIndex - 1;  rightIndex = centerIndex + 1;
+            while (leftIndex >= 0 && rightIndex < input.length()) {
+                if (input.charAt(leftIndex) != input.charAt(rightIndex)) {
+                    break;
+                }
+                currentPalindrome = input.substring(leftIndex, rightIndex + 1);
+                longestPalindrome = currentPalindrome.length() > longestPalindrome.length() ? currentPalindrome : longestPalindrome;
+                leftIndex--;  rightIndex++;
+            }
+        }
+        return longestPalindrome;
+    }
+
+
+public class Fib {
+    static public long fib(int n){
+        if(n<=1) return n;
+        else return fib(n-1) + fib(n-2);
+    }
+}
