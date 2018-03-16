@@ -1,4 +1,4 @@
-#Code Test
+# Code Test
 
 Simple java code test for a mock interview.
 
@@ -10,7 +10,7 @@ mvn test
 
 You're done when all the tests pass. In reality, you won't have time to do all the problems. That's ok.
 
-#Camel Case Problem
+# Camel Case Problem
 
 Turn a sentence into a camel case string:
 
@@ -18,15 +18,15 @@ input -> "For example, this sentence would be turned into something else."
 
 output -> "forExampleThisSentenceWouldBeTurnedIntoSomethingElse"
 
-#Fibonacci
+# Fibonacci
 
 write a function that returns the Fibonacci number of a given int.
 
-#Longest Palindrome
+# Longest Palindrome
 
 Given a string, find the longest palindrome in it.
 
-#Poker
+# Poker
 
 This is more open-ended to see how you work through a problem. You have a Card object (I put the available suits and ranks in there... good idea?) There's a Deck object that doesn't do a whole lot of anything.
 
